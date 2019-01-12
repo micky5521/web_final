@@ -30,7 +30,7 @@
 		
 </nav>
 
-<section1>
+<section1 id="sec1">
 		<div class="item1">
 		<a href="about.html"><h1>關於嘟嘟</h1></a>
 			<div class="text1">
@@ -60,11 +60,13 @@
 	function openNav() {
 	  document.getElementById("mySidenav").style.width   = "200px";
 	  document.getElementById("menu-icon").style.display = "none";
+	  document.getElementById("sec1").style.display = "none";
 	}
 	
 	function closeNav() {
 	  document.getElementById("mySidenav").style.width = "0";
 	  document.getElementById("menu-icon").style.display = "block";
+	  document.getElementById("sec1").style.display = "block";
 	}
 </script>
 
