@@ -16,9 +16,17 @@
 		<h3>嘟嘟的生活</h3>
 	</div>
 	<div class="menu">
-	<a  class="icon" onclick="myFunction()">
+	<a  class="icon" id="menu-icon" onclick="openNav()">
 	    <i class="fa fa-bars fa-2x"></i>
 	</a>
+	</div>
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#">About</a>
+	  <a href="#">Services</a>
+	  <a href="#">Clients</a>
+	  <a href="#">Contact</a>
+	</div>
 		
 </nav>
 
@@ -48,6 +56,17 @@
     	<img src="images/index2.JPG" class="fullimg">
     </div>
 </section>
+<script>
+	function openNav() {
+	  document.getElementById("mySidenav").style.width   = "200px";
+	  document.getElementById("menu-icon").style.display = "none";
+	}
+	
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	  document.getElementById("menu-icon").style.display = "block";
+	}
+</script>
 
 </body>
 
