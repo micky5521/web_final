@@ -40,8 +40,8 @@ ul{
 }
 
 .other{
-    min-height: 600px;
-    background: #639;
+    min-height: 300px;
+    background: gray;
 	color:#fff;
 	font-size:100px;
 	display: -webkit-flex;
@@ -55,6 +55,7 @@ ul{
 footer{	
 	position: fixed;
 	bottom:0;
+	font-size: 10px;
 	width:100%;
 	text-align:center;
 	z-index:3000;
