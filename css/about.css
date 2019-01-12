@@ -1,7 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
 @import url("rwd.css");
-
+@font-face{
+	font-family: "Bodoni 72 Bold";
+	src: url("Bodoni 72 OS.ttc")
+}
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC');
 
 
 /* menu and nav settings*/
@@ -57,19 +61,21 @@ body{
 }
 
 .aside{
+	font-family:"Bodoni 72 Bold";
 	float:top;
 	width: 100%;
-	height: 15vh;
+	height: 180px;
 	margin: 0;
+	background: rgba(255,217,0);
 }
 
 .box {
     display: inline-block;
-    width: 50px;
+    width: 130px;
     height: 100%;
     font-size: 100px;
     position: relative;
-    background: #00CCFF;
+    background: rgba(255,217,0);
 }
 
 .box:hover{
@@ -82,17 +88,25 @@ section{
 	left: 0%;
 	height: 100vh;
 	width:100%;
-	background: #ddd;
+	background: white;
 }
 
-.content{
+.text{
 	position: absolute;
-	left: 0%;
-	top:0;
-	width: 100%;
-	height: 100vh;
-	background: #F60;
-	display: none;
+	text-align: right;
+	left: 23%;
+	top: 20%;
+	font-size: 10px;
+	color:rgba(161,161,161,1.00);
+}
+
+.text1{
+	position: absolute;
+	text-align: left;
+	left: 45%;
+	top: 20%;
+	font-size: 10px;
+	color:rgba(161,161,161,1.00);
 }
 
 .yel{
@@ -114,23 +128,22 @@ section{
     .aside {
         display:inline-block;
         width: 100%;
-        height: 25vh;
+        height: 180px;
     }
     .box {
         display: inline-block;
-        width: 24.9%;
+        width: 19%;
         height: 37%%;
-        font-size: 100px;
         float:top;
         position: relative;
-        background: #00CCFF;
+        background: rgba(255,217,0);
     }
         section{
         position: relative;
         left: 0%;
         height: 100vh;
         width:100%;
-        background: #ddd;
+        background: white;
     }
 
 }
@@ -148,7 +161,7 @@ section{
         height: 25%;
         font-size: 100px;
         position: relative;
-        background: #00CCFF;
+        background: rgba(255,217,0);
     }
 
     section {
@@ -157,7 +170,7 @@ section{
         left: 0%;
         height: 100vh;
         width:84%;
-        background: #ddd;
+        background: white;
     }
 
 }
