@@ -2,8 +2,9 @@
 $(document).ready(function(){
 	$("#box1").click(function(){
 		$(".content").fadeToggle(1000);
-		$("#content1").hide();
-		$("#content2").hide();
+		$(".content1").fadeOut(100);
+		$(".content2").fadeOut(100);
+        console.log($("#content2").css("display"))
 		if($(this).hasClass("ch_bg")){
 			$(this).removeClass("ch_bg")
 		}else{
@@ -13,8 +14,8 @@ $(document).ready(function(){
 	});
 	$("#box2").click(function(){
 		$(".content2").fadeToggle(1000);
-		$("#content").hide();
-		$("#content1").hide();
+		$(".content").fadeOut(100);
+		$(".content1").fadeOut(100);
 		if($(this).hasClass("ch_bg")){
 			$(this).removeClass("ch_bg")
 		}else{
@@ -24,8 +25,8 @@ $(document).ready(function(){
 	});
 	$("#box3").click(function(){
 		$(".content3").fadeToggle(1000);
-		$("#content").hide();
-		$("#content2").hide();
+		$(".content").fadeOut(100);
+		$(".content2").fadeOut(100);
 		if($(this).hasClass("ch_bg")){
 			$(this).removeClass("ch_bg")
 		}else{
