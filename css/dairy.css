@@ -3,7 +3,7 @@
 @import url("rwd.css");
 @font-face{
 	font-family: "Bodoni 72 Bold";
-	src: url(Bodoni 72 OS.ttc)
+	src: url("Bodoni 72 OS.ttc")
 }
 
 body{
