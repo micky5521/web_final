@@ -13,10 +13,20 @@ html, body{
 
 nav{
 	position: fixed;
-	left: 3%;
-	top: 5%;
+    width: 100%;
 	z-index: 100;
 	color: white;
+}
+.title {
+    position: fixed;
+
+    top: 5%;
+    left: 3%;
+}
+.menu {
+    position: fixed;
+    top: 5%;
+    right: 3%;
 }
 a{
 	color: white;
@@ -58,7 +68,7 @@ h2{
 h3{
 	font-family:'NotoSansMonoCJKtc-Regular';
 	margin: 0;
-	font-size: 16px;
+	font-size: 18px;
 	position: relative;
 }
 h4{
