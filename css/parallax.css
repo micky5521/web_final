@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+nav{
+	box-sizing: border-box 80px;
+	position: fixed;
+	right:15px; 
+	margin: 2vh;
+	z-index: 1000;
+}
+
+.menu{
+	padding: 10px 30px;
+	background: #999999;
+}
+
+h1{
+	font-size: 45px;
+	color: white;
+}
+.title{
+	position: absolute;
+	left: 8.33%;
+	top: 15%;
+}
+
+html body{
+	padding:0;
+	margin:0;	
+}
+
+ul{
+	position:fixed;
+	top:0;
+	z-index:1000;
+}
+
+.parallax-window{
+	min-height: 600px;/*最好設固定高*/
+}
+
+.other{
+    min-height: 600px;
+    background: #639;
+	color:#fff;
+	font-size:100px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items:center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+footer{	
+	position: fixed;
+	bottom:0;
+	width:100%;
+	text-align:center;
+	z-index:3000;
+	color:#fff;
+}

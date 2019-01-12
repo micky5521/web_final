@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url("rwd.css");
+
+nav{
+	box-sizing: border-box 80px;
+	position: fixed;
+	right:15px; 
+	margin: 2vh;
+	z-index: 1000;
+}
+
+.menu{
+	padding: 10px 30px;
+	background: #999999;
+}
+
+body{
+	margin: 0;
+}
+
+aside{
+	float:top;
+	width: 20%;
+	height: 15vh;
+	margin: 0;
+}
+
+.box {
+	width: 100%;
+	height: 100%;
+	font-size: 100px;
+	background: #00CCFF;
+}
+
+.box:hover{
+	background: #36F;
+	cursor:pointer; /*cursor 游標*/
+}
+
+section{
+	position: relative;
+	left: 0%;
+	height: 100vh;
+	width:100%;
+	background: #ddd;
+}
+
+.content{
+	position: absolute;
+	left: 0%;
+	top:0;
+	width: 100%;
+	height: 100vh;
+	background: #F60;
+	display: none;
+}
+
+.yel{
+	background: #FF0;
+}
+
+.pink{
+	background: #F3C;
+}
+
+.ch_bg{ /*在JQ有的change background*/
+	background: #36F;
+}
+
+/*========= rwd detail ==========*/
+/* For tablet*/
+
+@media only screen and (min-width: 768px){
+aside{
+	float:top;
+	width: 20%;
+	height: 25vh;
+	margin: 0;
+}
+	section{
+	position: relative;
+	left: 0%;
+	height: 100vh;
+	width:100%;
+	background: #ddd;
+}
+
+}
+
+/* For desktop*/
+@media only screen and (min-width: 1200px){
+aside{
+	float:left;
+	width: 20%;
+	height: 33.33vh;
+	margin: 0;
+}
+
+section{
+	float:left;
+	position: relative;
+	left: 0%;
+	height: 100vh;
+	width:80%;
+	background: #ddd;
+}
+
+}

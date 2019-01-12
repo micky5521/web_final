@@ -1,0 +1,121 @@
+@charset "utf-8";
+/*CSS Document */
+@font-face{
+	font-family:'NotoSansMonoCJKtc-Regular','NotoSansMonoCJKtc-Bold';
+	src:url(NotoSansMonoCJKtc-Regular.otf),url(NotoSansMonoCJKtc-Bold.otf);
+}
+@import url("rwd.css");
+
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+nav{
+	position: fixed;
+	left: 3%;
+	top: 5%;
+	z-index: 100;
+	color: white;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+a:hover{
+	color:#E9E9E9;
+}
+.text1 {
+	display: none;
+}
+.text2 {
+	display: none;
+}
+.text3 {
+	display: none;
+}
+
+a:hover~.text1{
+	display: block;
+}
+a:hover~.text2{
+	display: block;
+}
+a:hover~.text3{
+	display: block;
+}
+
+h1{
+	font-size: 50px;
+	position: relative;
+	margin: 0;
+}
+
+h2{
+	font-size: 38px;
+}
+
+h3{
+	font-family:'NotoSansMonoCJKtc-Regular';
+	margin: 0;
+	font-size: 16px;
+	position: relative;
+}
+h4{
+	font-size: 10px;
+}
+
+section1{
+	position: fixed;
+	left:8.33%;
+	top:22%;
+	z-index: 100;
+	color: white;
+}
+
+section{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.content{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.content img{
+	position: absolute;
+	top: 0; /*圖片變形的基準點為左上方*/
+	left: 0;
+	overflow: hidden;
+}
+
+/*========= rwd detail ==========*/
+/* For tablet*/
+
+@media only screen and (min-width: 768px){
+	nav{
+	display: block;
+	}
+	h1{
+	font-size: 50px;
+	}
+	h3{
+		font-size: 17px;
+	}
+
+
+}
+
+/* For desktop*/
+@media only screen and (min-width: 1200px){
+	h1{
+	font-size: 60px;
+	}
+	h3{
+		font-size: 18px;
+	}
+
+}
