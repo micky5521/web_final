@@ -1,6 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
-
+@font-face{
+	font-family:"Bodoni 72 Bold";
+	src: url("Bodoni 72 OS.ttc");
+}
 /* menu and nav settings*/
 nav{
 	position: fixed;
@@ -22,7 +25,7 @@ nav{
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color:rgba(255,217,0,0.60);
     overflow-x: hidden;
     transition: 0.5s;
     margin: 10px 0 0 0;
@@ -30,6 +33,7 @@ nav{
 }
 
 .sidenav a {
+	font-family:"Bodoni 72 Bold";
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -53,11 +57,6 @@ h1{
 	font-size: 45px;
 	color: white;
 }
-.title{
-	position: absolute;
-	left: 8.33%;
-	top: 15%;
-}
 
 html body{
 	padding:0;
@@ -78,7 +77,8 @@ ul{
     min-height: 300px;
     background:rgba(255,217,0,1.00);
 	color:#fff;
-	font-size:100px;
+	font-family: "Bodoni 72 Bold";
+	font-size:24px;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-align-items:center;
