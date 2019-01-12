@@ -23,19 +23,53 @@ header{
 	z-index: 100000;
 }
 
-/* nav bar */
+/* menu and nav settings*/
 nav{
-	box-sizing: border-box 80px;
 	position: fixed;
-	right:15px; 
-	top: -2px;
-	margin: 2vh;
-	z-index: 1000;
+    width: 100%;
+	z-index: 100;
+	color: white;
+}
+.menu {
+    display: block;
+    position: fixed;
+    top: 5%;
+    right: 3%;
 }
 
-.menu{
-	padding: 10px 30px;
-	background: #999999;
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    overflow-x: hidden;
+    transition: 0.5s;
+    margin: 10px 0 0 0;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #CCCCCC;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 .month{

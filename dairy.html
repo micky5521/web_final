@@ -5,14 +5,26 @@
 <title></title>
 <link href="css/dairy.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Charmonman:400,700|Noto+Sans&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <body>
  <header>	
 	<nav>
-	<div class="menu">Menu</div>
+        <div class="menu">
+            <a  class="icon" id="menu-icon" onclick="openNav()">
+                <i class="fa fa-bars fa-2x"></i>
+            </a>
+        </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="About.html">About</a>
+          <a href="a day.html">A day</a>
+          <a href="dairy.html">Dairy</a>
+        </div>
 	</nav>
-	<div class="month"><img src="images/dec.png"></div>
+<div class="month"><img src="images/dec.png"></div>
 </header>
 	
 
@@ -163,6 +175,17 @@
 
 
 
+<script>
+	function openNav() {
+	  document.getElementById("mySidenav").style.width   = "220px";
+	  document.getElementById("menu-icon").style.display = "none";
+	}
+	
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	  document.getElementById("menu-icon").style.display = "block";
+	}
+</script>
 </body>
 </html>
 
