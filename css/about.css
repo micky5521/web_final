@@ -58,6 +58,7 @@ nav{
 }
 body{
 	margin: 0;
+	background: rgba(255,217,0);
 }
 
 .aside{
@@ -79,7 +80,7 @@ body{
 }
 
 .box:hover{
-	background: #36F;
+	background: rgba(255,217,0);
 	cursor:pointer; /*cursor 游標*/
 }
 
@@ -88,26 +89,27 @@ section{
 	left: 0%;
 	height: 100vh;
 	width:100%;
-	background: white;
+	background: rgba(255,217,0);
 }
 
 .text{
 	position: absolute;
-	text-align: right;
-	left: 23%;
-	top: 20%;
+	text-align: left;
+	left: 20%;
+	top: 50%;
 	font-size: 10px;
-	color:rgba(161,161,161,1.00);
+	color:white;
 }
 
 .text1{
 	position: absolute;
 	text-align: left;
-	left: 45%;
-	top: 20%;
+	left: 20%;
+	top: 100%;
 	font-size: 10px;
-	color:rgba(161,161,161,1.00);
+	color:white;
 }
+
 
 .yel{
 	background: #FF0;
@@ -145,6 +147,24 @@ section{
         width:100%;
         background: white;
     }
+	
+	.text{
+	position: absolute;
+	text-align: left;
+	left: 15%;
+	top: 20%;
+	font-size: 10px;
+	color:white;
+}
+
+.text1{
+	position: absolute;
+	text-align: left;
+	left: 40%;
+	top: 20%;
+	font-size: 10px;
+	color:white;
+}
 
 }
 
@@ -172,5 +192,22 @@ section{
         width:84%;
         background: white;
     }
+	.text{
+	position: absolute;
+	text-align: left;
+	left: 23%;
+	top: 55%;
+	font-size: 10px;
+	color:white;
+}
+
+.text1{
+	position: absolute;
+	text-align: left;
+	left: 45%;
+	top: 55%;
+	font-size: 10px;
+	color:white;
+}
 
 }
